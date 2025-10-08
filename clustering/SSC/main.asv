@@ -1,0 +1,22 @@
+clear all
+
+dataMat = 'data/BRDF_pca_data.mat';
+
+%%
+load(dataMat);
+X = brdf_log_relative;
+clear brdf_log_relative brdf_mean epsilon
+
+%normalize data
+X = (X - min(X,[],1)) ./ (max(X,[],1) - min(X,[],1));
+
+%% find subspaces
+n = 8;
+%SSC(X,n,r,affine,alpha,outlier,rho);
+[grps,CMat] = SSC(X,n,0,0,200.0,0,1.0);
+tmp = 0;
+
+%% subspace dims
+for i = 1:max(grps)
+    c
+end

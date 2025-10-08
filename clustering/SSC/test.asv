@@ -1,0 +1,41 @@
+clear all
+
+ratio = 0.5;
+
+m = 50; %signal dim
+tau1 = 8;
+tau2 = 16;
+
+U1 = randn(m,tau1);
+U2 = randn(m,tau2);
+
+n1 = 1000; 
+n2 = 100;
+
+S1 = randn(tau1, n1);
+S2 = randn(tau2, n2);
+
+
+X1 = U1 * S1;
+X2 = U2 * S2;
+
+[u1,s1,v1] = svd(X1,'econ');
+s1 = diag(s1);
+s1(tau1*ratio+1:end) = 0;
+X1_ = u1*diag(s1)*v1';
+fprintf('X1 error: %f\n', norm(X1-X1_,'fro')/n1);
+
+[u2,s2,v2] = svd(X2,'econ');
+s2 = diag(s2);
+s2(tau2*ratio+1:end) = 0;
+X2_ = u2*diag(s2)*v2';
+fprintf('X2 error: %f\n', norm(X2-X2_,'fro')/n2);
+
+X = [X1,X2];
+X = X(:,randperm(n1+n2));
+[u,s,v] = svd(X,'econ');
+s = diag(s);
+s((tau1+tau2)*ratio+1:end) = 0;
+X_ = u*diag(s)*v';
+fprintf('X error: %f\n', norm(X-X_,'fro')/(n1+n2));
+
