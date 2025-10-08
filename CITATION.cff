@@ -1,0 +1,21 @@
+## 📘 **CITATION.cff File (for GitHub’s “Cite this repository” feature)**
+
+Save this file as `CITATION.cff` in the **root directory** of your repo:
+
+```yaml
+cff-version: 1.2.0
+message: "If you use this code, please cite our paper under review."
+title: "Adaptive Sampling for BRDF Acquisition"
+authors:
+  - family-names: "Kavoosighafi"
+    given-names: "Behnaz"
+  - family-names: "Hajisharif"
+    given-names: "Saghi"
+  - family-names: "Unger"
+    given-names: "Jonas"
+  - family-names: "Miandji"
+    given-names: "Ehsan"
+year: 2025
+url: "https://github.com/behnazkavoosi/adaptive-brdf-sampling"
+version: "1.0.0"
+type: "software"
