@@ -1,8 +1,7 @@
 # Adaptive Sampling for BRDF Acquisition 
 
-This repository contains the reference implementation for our paper  
-**“Adaptive Sampling for BRDF Acquisition.”**  
-It provides a full pipeline for **BRDF clustering**, **adaptive sampling**, **classification**, and **reconstruction**.
+This repository contains the reference implementation for our paper **“Adaptive Sampling for BRDF Acquisition.”**  
+It provides a full pipeline for **BRDF clustering**, **sampling**, **classification**, and **reconstruction**.
 
 ---
 
@@ -26,6 +25,7 @@ It provides a full pipeline for **BRDF clustering**, **adaptive sampling**, **cl
 This project uses two types of data:
 
 **1) Image Dataset for Classifier:** [placeholder]
+
 **2) BRDF Datasets for MATLAB Pipeline:** [placeholder]
 
 ## ▶️ How to Run
@@ -50,7 +50,9 @@ findClusters
 ```matlab
 runSampling
 ```
-- Finds optimal sample locations given the sample count obtained from 2️⃣ (Note that this script uses FROST-BRDF sampling technique as an example, but any other technique such as Nielse et al.'s can be used at this stage).
+- Finds optimal sample locations given the sample count obtained from step 2️⃣.
+
+> **Note:** This script uses FROST-BRDF sampling as an example, but other techniques (e.g., Nielsen et al.) can also be used.
 
 ### 4️⃣ classification_200x200.ipynb
 Open and run the Jupyter notebook:
@@ -60,11 +62,13 @@ classification_200x200.ipynb
 - Trains and evaluates a classifier on image data (200×200 patches or configured size).
 - Uses the adaptive sampling results for training and validation.
 
+> **Note:** Before running the notebook, execute `saveLabels` and `saveTrainNames` in MATLAB to prepare the data for classification.
+
 ### 5️⃣ runClassRecon.m
 ```matlab
 runClassRecon
 ```
-- Reconstructs BRDFs in the testing set based on the classification result
+- Reconstructs BRDFs in the testing set based on the classification results.
 - Saves reconstructed BRDF files and evaluation metrics.
 
 ## 📄 Citation
@@ -81,9 +85,3 @@ If you use this code, please cite:
   booktitle = {Under Review},
   year      = {2025}
 }
-
-
-
-
-
-
