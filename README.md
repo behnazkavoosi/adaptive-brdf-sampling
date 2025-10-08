@@ -88,3 +88,14 @@ If you use this code, please cite:
   booktitle = {Under Review},
   year      = {2025}
 }
+```
+## 📬 Contact
+
+For inquiries, please contact:  
+📧 **behnaz.kavoosighafi@liu.se**
+
+## 🛡️ License
+
+This work is licensed under a [**Creative Commons Attribution–NonCommercial–ShareAlike 4.0 International License (CC BY-NC-SA 4.0)**](https://creativecommons.org/licenses/by-nc-sa/4.0/).
+
+[![License: CC BY-NC-SA 4.0](https://img.shields.io/badge/License-CC%20BY--NC--SA%204.0-blue.svg)](https://creativecommons.org/licenses/by-nc-sa/4.0/)
