@@ -24,9 +24,12 @@ It provides a full pipeline for **BRDF clustering**, **sampling**, **classificat
 ## 🗃️ Datasets
 This project uses two types of data:
 
-**1) Image Dataset for Classifier:** [placeholder]
+**1) Image Dataset for Classifier:** [Image dataset](https://liuonline-my.sharepoint.com/:u:/g/personal/behka57_liu_se/EXr5CAJ6h4ZDlz9JiQzAJfoBDDH_9nRX9iPfRkMUMhphXg?e=8vgfgz)
+> **Note:** The dataset includes 200×200 images of materials rendered under a point light moving from 45° to 90°,  
+> but the classifier only uses angles from 75° to 90° as input.
 
-**2) BRDF Datasets for MATLAB Pipeline:** [placeholder]
+**2) BRDF Datasets for MATLAB Pipeline:** [MERL](https://cdfg.csail.mit.edu/wojciech/brdfdatabase), [Extended MERL](https://ana-serrano.github.io/projects/Material-Appearance.html), [RGL-EPFL](https://rgl.epfl.ch/materials)
+> **Note:** RGL-EPFL BRDFs can be reparametrized into MERL space using the code from [chenzhekl/rgl-to-merl](https://github.com/chenzhekl/rgl-to-merl).
 
 ## ▶️ How to Run
 
