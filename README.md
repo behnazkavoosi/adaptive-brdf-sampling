@@ -91,8 +91,7 @@ If you use this code, please cite:
 ```
 ## 📬 Contact
 
-For inquiries, please contact:  
-📧 **behnaz.kavoosighafi@liu.se**
+For inquiries, please contact: **behnaz.kavoosighafi@liu.se**
 
 ## 🛡️ License
 
