@@ -82,7 +82,7 @@ If you use this code, please cite:
 > Under Review (2025)
 
 ```bibtex
-@inproceedings{Kavoosighafi2025AdaptiveBRDF,
+@article{Kavoosighafi2025AdaptiveBRDF,
   title     = {Adaptive Sampling for BRDF Acquisition},
   author    = {Behnaz Kavoosighafi and Saghi Hajisharif and Jonas Unger and Ehsan Miandji},
   booktitle = {Under Review},
