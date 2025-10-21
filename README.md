@@ -79,13 +79,13 @@ If you use this code, please cite:
 
 > **Adaptive Sampling for BRDF Acquisition**  
 > *Behnaz Kavoosighafi, Saghi Hajisharif, Jonas Unger, and Ehsan Miandji*  
-> Under Review (2025)
+> Computer Graphics Forum (2025)
 
 ```bibtex
 @article{Kavoosighafi2025AdaptiveBRDF,
   title     = {Adaptive Sampling for BRDF Acquisition},
   author    = {Behnaz Kavoosighafi and Saghi Hajisharif and Jonas Unger and Ehsan Miandji},
-  booktitle = {Under Review},
+  booktitle = {Computer Graphics Forum},
   year      = {2025}
 }
 ```
